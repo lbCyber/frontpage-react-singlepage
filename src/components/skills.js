@@ -19,7 +19,7 @@ const Skills = () => {
         <h5 className="mobileExclude">I am a creator</h5>
         <p className="mobileExclude">
           I consider myself a life-long creator and a veteran in web development
-          (though one who is constantly learning and improving).{" "}
+          (though one who is constantly learning and improving).
         </p>
         <p>
           My philosophy in design has always been to challenge myself and invent
@@ -58,12 +58,8 @@ const Skills = () => {
       <div className="skillIconsContainer">
         {skillList.map((skill, key) => {
           return (
-            <img
-              className="skillIcon"
-              src={`./assets/devicons/${skill[0]}.svg`}
-              alt={skill[1]}
-              key={key}
-            />
+            <img className="skillIcon" src={`./assets/devicons/${skill[0]}.svg`} alt={skill[1]}
+              key={key} />
           );
         })}
       </div>

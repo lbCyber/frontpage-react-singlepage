@@ -5,11 +5,7 @@ const Bio = () => {
     <section classname="bioBox">
       <div className="paulPic">
         <div className="avContainer paulAv" id="paulAv">
-          <img
-            src="./assets/meAvT.png"
-            alt="Pixel-art illustration of myself"
-            onMouseDown={() => dootAudio.play()}
-          />
+          <img src="./assets/meAvT.png" alt="Pixel-art illustration of myself" onMouseDown={() => dootAudio.play()} />
         </div>
       </div>
       <h5>Hey there!</h5>
@@ -26,31 +22,7 @@ const Bio = () => {
       <h5 className="mobileExclude">What's your story?</h5>
       <p className="mobileExclude">
         Born and raised in Niagara Falls, I eventually found myself in love with
-        the city of Toronto, studying at prestigious schools including{" "}
-        <a href="http://utoronto.ca" target="_blank" rel="noopener noreferrer">
-          University of Toronto
-        </a>
-        ,{" "}
-        <a href="http://humber.ca" target="_blank" rel="noopener noreferrer">
-          Humber College
-        </a>
-        , and{" "}
-        <a
-          href="https://junocollege.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Juno
-        </a>{" "}
-        (formerly{" "}
-        <a
-          href="https://hackeryou.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HackerYou
-        </a>
-        ).
+        the city of Toronto, studying at prestigious schools including <a href="http://utoronto.ca" target="_blank" rel="noopener noreferrer"> University of Toronto</a>, <a href="http://humber.ca" target="_blank" rel="noopener noreferrer">Humber College</a>, and <a href="https://junocollege.com" target="_blank" rel="noopener noreferrer">Juno</a> (formerly <a href="https://hackeryou.com" target="_blank" rel="noopener noreferrer">HackerYou</a>).
       </p>
       <p>
         I have years of experience freelancing as a web developer for small
@@ -77,8 +49,7 @@ const Bio = () => {
       </p>
       <h6 className="ds">(Also I'm pretty good at Dark Souls)</h6>
       <p className="mobileExclude">
-        So if you have anything you'd like to talk about, please{" "}
-        <a href="mailto:paul@lintbox.com">contact me!</a>
+        So if you have anything you'd like to talk about, please <a href="mailto:paul@lintbox.com">contact me!</a>
       </p>
     </section>
   );

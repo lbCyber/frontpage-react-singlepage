@@ -50,20 +50,10 @@ const Work = () => {
         <h5 className="sortTitle">Sort by:</h5>
         <div className="sortOptions">
           <p className="sortText activeSort" onClick={() => sorter(1)}>
-            Latest{" "}
-            <span
-              className={
-                sort === 1 ? (order === -1 ? "ascSort" : "descSort") : null
-              }
-            ></span>
+            Latest <span className={sort === 1 ? (order === -1 ? "ascSort" : "descSort") : null}></span>
           </p>
           <p className="sortText" onClick={() => sorter(0)}>
-            Alphabetically{" "}
-            <span
-              className={
-                sort === 0 ? (order === 1 ? "ascSort" : "descSort") : null
-              }
-            ></span>
+            Alphabetically <span className={sort === 0 ? (order === 1 ? "ascSort" : "descSort") : null}></span>
           </p>
         </div>
       </div>
@@ -72,24 +62,17 @@ const Work = () => {
           return (
             <div className="projectContainer" key={key}>
               <h3 className="projectName">Name: {project.title}</h3>
-              <img
-                className="projectBanner"
-                src={`./assets/${project.image}`}
-                alt=""
-              />
+              <img className="projectBanner" src={`./assets/${project.image}`} alt="" />
               <h4 className="projectDate">
-                Published:{" "}
-                {`${months[project.published[1]]} ${project.published[2]}, ${
-                  project.published[0]
-                }`}
+                Published: {`${months[project.published[1]]} ${project.published[2]}, ${project.published[0]}`}
               </h4>
               <div className="projectText">
-                <ReactMarkdown children={project.text} linkTarget="_blank" parserOptions={{commonmark: true}} />
+                <ReactMarkdown children={project.text} linkTarget="_blank" parserOptions={{ commonmark: true }} />
               </div>
               <div className="projectFeaturesContainer">
                 <ul>
                   {project.features.map((feature, key) => {
-                    return <li key={key}>{features[feature]}</li>;
+                    return <li key={key}>{features[feature]}</li>
                   })}
                 </ul>
               </div>
