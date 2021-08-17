@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import Project from "../json/projects.json";
 
 const Work = () => {
-  const [work] = useState(Project.projects),
+  const [work, setWork] = useState(Project.projects),
     [months] = useState(Project.months),
     [features] = useState(Project.featureList),
     [sort, setSort] = useState(1),
@@ -42,7 +42,7 @@ const Work = () => {
 
   const sorter = (obj = 1) => {
     let sortedObj = sortWork(obj);
-    work(sortedObj);
+    setWork(sortedObj);
   };
   return (
     <section className="">

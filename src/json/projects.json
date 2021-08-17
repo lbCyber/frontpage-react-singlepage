@@ -1,11 +1,16 @@
 {
-  "projects": [{
+  "projects": [
+    {
       "title": "Horror Night",
       "titleshort": "horror",
       "image": "port-horror.jpg",
       "live_site": "https://horror-night.lintbox.com",
       "git": "https://github.com/lbCyber/Horror-Night---React",
-      "published": [2019, 9, 31],
+      "published": [
+        2019,
+        9,
+        31
+      ],
       "text": "Horror Night is the latest personal project of mine, and it's still a work in progress as I add more content and refine the design.\n\nMade purely in React and using original content in tandem with [The Movie Database's excellent API](https://themoviedb.org), Horror Night is something I've been wanting to create for a while, and inspired by what's become a ritual with my closest friend, where we get together every month to watch a new horror film and then dissect it.\n\nThough it's still in its early stages, it currently comprises of over 3,000+ lines of code, all written within the span of a single week.\n\nAs I grow more and more comfortable with React, I'm more eager to come up with new React projects like this one!",
       "features": [
         "accessible",
@@ -23,7 +28,11 @@
       "image": "port-haiku.jpg",
       "live_site": "https://haiku.lintbox.com",
       "git": "https://github.com/lbCyber/haiku-generator",
-      "published": [2019, 2, 10],
+      "published": [
+        2019,
+        2,
+        10
+      ],
       "text": "The Haiku generator was one of the larger-scale web applications I've created, and one of my prouder accomplishments.\n\nProgrammed entirely in Javascript, this project was a labour of love and my final piece for [Juno](https://junocollege.com)'s part-time web development program. The intent was to create a procedural method of producing genuine, randomly-generated haikus faithful to the traditional Japanese style. Every line is chosen from a database of personally-written poetry, along with an accompanying, low-weight looping background animation.\n\nThe project took about a week to design and build, with additional time spent to refine and add to the overall product after completion.\n\nThere were a lot of issues in its development, including caching issues that force the unloading of webm assets, but that only emboldened me to work harder and learn more.\n\nI'm now working on importing the app into React.",
       "features": [
         "accessible",
@@ -43,7 +52,11 @@
       "image": "port-scope.jpg",
       "live_site": "https://sc.lintbox.com",
       "git": "https://github.com/lbCyber/Scope-Creep",
-      "published": [2019, 4, 19],
+      "published": [
+        2019,
+        4,
+        19
+      ],
       "text": "Scope Creep has been my most ambitious project to date, and a piece I'm constantly working on and improving. It currently exists a proof-of-concept story-telling framework running a work-in-progress story.\n\nBuilt in Javascript, this served as my entry into developing an API for my purposes, designed with future expandability in mind. This API permits the developer to produce their own story with a simple and easy-to-understand interface, though with a powerful choice-based system.\n\nIt was a lot of fun to make, and offered me a chance to try out new ideas for styling effects in CSS, including scanlines, image artifacting, and pixelation. The 'Options' button provides the user with their choice of traditional computer terminals for the styles to emulate, including a plaintext option as an accessibility feature.",
       "features": [
         "accessible",
@@ -61,7 +74,11 @@
       "image": "port-movie.jpg",
       "live_site": "https://movie-night.lintbox.com",
       "git": "https://github.com/movie-night/movie-night-project-4",
-      "published": [2019, 4, 26],
+      "published": [
+        2019,
+        4,
+        26
+      ],
       "text": "Movie Night was a collaborative project with the purpose of using a chosen third-party API to render a small and fun application.\n\nMovie Night's premise is simple: Provide the user with a randomly-picked movie recommendation based on a chosen genre, preferred age, and preferred quality (lower-quality movies having the 'I wanna watch something trashy' tagline).\n\nWe used [theMovieDB.org](http://themoviedb.org)'s API for this purpose, and developed a clean, Kodi-inspired design as its output.",
       "features": [
         "accessible",
@@ -79,7 +96,11 @@
       "live_site": "https://cronus-business.lintbox.com",
       "git": "https://github.com/lbCyber/cronus-business",
       "psd": "https://cronus-business.lintbox.com/psd.jpg",
-      "published": [2019, 1, 10],
+      "published": [
+        2019,
+        1,
+        10
+      ],
       "text": "Cronus is a large, single-page spread mockup, and only the second PSD conversion I had ever attempted.\n\nMy personal challenge in this PSD conversion was to add an additional challenge of adding features and elements not necessarily breaking faithfulness to the original.\n\nThough originally made with very little responsiveness (as was instructed), I continued to work on making it fully responsive with a few additional touches.\n\nI'm proud of the things I learned through this exercise and the new and interesting design tricks I had implemented.\n\nOverall, developing this site, though not of my own original design, was a fun experience and allowed me to test my creativity in ways I hadn't often explored.",
       "features": [
         "accessible",
@@ -95,7 +116,11 @@
       "live_site": "https://foot-forward.lintbox.com",
       "git": "https://github.com/lbCyber/foot-forward-psd",
       "psd": "https://foot-forward.lintbox.com/psd.jpg",
-      "published": [2019, 4, 1],
+      "published": [
+        2019,
+        4,
+        1
+      ],
       "text": "Foot-Forward is another PSD conversion site I found interesting and fulfilling to work on.  The reason is, specifically, because of the limitations imposed in the exercise: Objects *must* be aligned using only floats. That meant taking a careful approach to ensure that collisions between objects wouldn't happen. With the additional factor of making the site fully responsive, this conversion was a lot of work to pull off, despite the very simple aesthetic.  Ultimately the work I've found most rewarding are those not necessarily the most aesthetically-rich, but that provide the greatest learning experience.",
       "features": [
         "accessible",
@@ -108,7 +133,20 @@
       ]
     }
   ],
-  "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+  "months": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
   "featureList": {
     "3rdAPI": "Use of 3rd-Party API",
     "accessible": "WCAG-Compliant Accessible Design",
