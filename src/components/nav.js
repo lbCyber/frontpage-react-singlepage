@@ -1,18 +1,20 @@
 const Nav = () => {
   return (
-    <nav className="navTop">
-      <ul className="mainNav">
-        <li>bio</li>
-        {/* eslint-disable-next-line*/}
-        <span className="navSeparator">//</span>
-        <li>skills</li>
-        {/* eslint-disable-next-line*/}
-        <span className="navSeparator">//</span>
-        <li>work</li>
-        {/* eslint-disable-next-line*/}
-        <span className="navSeparator">//</span>
-        <li>contact</li>
-      </ul>
+    <nav className="">
+      <div className="wrapper">
+        <ul className="">
+          <li>bio</li>
+          {/* eslint-disable-next-line*/}
+          <span className="">//</span>
+          <li>skills</li>
+          {/* eslint-disable-next-line*/}
+          <span className="">//</span>
+          <li>work</li>
+          {/* eslint-disable-next-line*/}
+          <span className="">//</span>
+          <li>contact</li>
+        </ul>
+      </div>
     </nav>
   );
 };

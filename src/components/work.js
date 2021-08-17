@@ -45,40 +45,50 @@ const Work = () => {
     work(sortedObj);
   };
   return (
-    <section className="portfolio">
-      <div className="sortBox">
-        <h5 className="sortTitle">Sort by:</h5>
-        <div className="sortOptions">
-          <p className="sortText activeSort" onClick={() => sorter(1)}>
-            Latest <span className={sort === 1 ? (order === -1 ? "ascSort" : "descSort") : null}></span>
-          </p>
-          <p className="sortText" onClick={() => sorter(0)}>
-            Alphabetically <span className={sort === 0 ? (order === 1 ? "ascSort" : "descSort") : null}></span>
-          </p>
+    <section className="">
+      <div className="wrapper">
+        <div className="">
+          <h5 className="">Sort by:</h5>
+          <div className="">
+            <p className=""
+              onClick={() => sorter(1)}>Latest <span className={sort === 1 ? (order === -1 ? "ascSort" : "descSort") : null}></span>
+            </p>
+            <p className=""
+              onClick={() => sorter(0)}>
+              Alphabetically <span className={sort === 0 ? (order === 1 ? "ascSort" : "descSort") : null}></span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="portfolioBox">
-        {work.map((project, key) => {
-          return (
-            <div className="projectContainer" key={key}>
-              <h3 className="projectName">Name: {project.title}</h3>
-              <img className="projectBanner" src={`./assets/${project.image}`} alt="" />
-              <h4 className="projectDate">
-                Published: {`${months[project.published[1]]} ${project.published[2]}, ${project.published[0]}`}
-              </h4>
-              <div className="projectText">
-                <ReactMarkdown children={project.text} linkTarget="_blank" parserOptions={{ commonmark: true }} />
+        <div className="">
+          {work.map((project, key) => {
+            return (
+              <div className="" key={key}>
+                <h3 className="">Name: {project.title}</h3>
+                <img className=""
+                  src={`./assets/${project.image}`}
+                  alt=""
+                />
+                <h4 className="">
+                  Published: {`${months[project.published[1]]} ${project.published[2]}, ${project.published[0]}`}
+                </h4>
+                <div className="">
+                  <ReactMarkdown
+                    children={project.text}
+                    linkTarget="_blank"
+                    parserOptions={{ commonmark: true }}
+                  />
+                </div>
+                <div className="">
+                  <ul>
+                    {project.features.map((feature, key) => {
+                      return <li key={key}>{features[feature]}</li>
+                    })}
+                  </ul>
+                </div>
               </div>
-              <div className="projectFeaturesContainer">
-                <ul>
-                  {project.features.map((feature, key) => {
-                    return <li key={key}>{features[feature]}</li>
-                  })}
-                </ul>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   )

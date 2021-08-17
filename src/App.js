@@ -4,23 +4,19 @@ import Skills from "./components/skills";
 import Work from "./components/work";
 import Contact from "./components/contact";
 import Nav from "./components/nav";
-import "./App.css";
 
 function App() {
   return (
     <>
-      <div className="wrapper">
-        <Nav />
-        <main>
-          <NameTag />
-          <Bio />
-          <Skills />
-          <Work />
-          <Contact />
-        </main>
-      </div>
-      <div className="preload">
-        {" "}
+      <Nav />
+      <main>
+        <NameTag />
+        <Bio />
+        <Skills />
+        <Work />
+        <Contact />
+      </main>
+      <div className="preload" aria-hidden>
         {/* prevent assets from blinking on load */}
         <img src="./assets/meAvT.png" alt="" />
         <img src="./assets/meAvTSkeletondoot.png" alt="" />
